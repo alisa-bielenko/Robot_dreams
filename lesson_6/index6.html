@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lesson 6</title>
+    </head>
+    <body>
+        <h1>Lesson 6</h1>
+        
+        <form action="/" name="registr-form" novalidate>
+            <fieldset>
+                <legend>Register Form</legend>
+
+                <label for="name">First Name</label>
+                <br>
+                <input type="text" id="name" name="first-name" placeholder="First Name" minlength="2" maxlength="10" required>
+                <br>
+                <br>
+                <label for="surname">Last Name</label>
+                <br>
+                <input type="text" id="surname" name="last-name" placeholder="Last Name" required>
+                <br>
+                <br>
+                <label for="family-name">Family Name</label><br>
+                <input type="text" value="test test" name="family-name" id="family-name" readonly>
+                
+                <p>Choose your gender</p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" value="male" name="gender" required>
+                <label for="female">Female</label>
+                <input type="radio" id="female" value="female" name="gender" required>
+                <label for="other">Other</label>
+                <input type="radio" id="other" value="other" name="gender" required>
+
+                <p>Choose your car</p>
+                <label for="bmw">BMW</label>
+                <input type="checkbox" name="car" value="bmw" id="bmw">
+                <label for="audi">Audi</label>
+                <input type="checkbox" name="car" value="audi" id="audi">
+                <label for="opel">Opel</label>
+                <input type="checkbox" name="car" value="opel" id="opel">
+                <label for="vw">VW</label>
+                <input type="checkbox" name="car" value="vw" id="vw">
+
+                <br>
+                <br>
+                <label>
+                    Age
+                    <input type="number" name="age" min="18" max="100">
+                </label><br>
+                <br>
+                <br>
+
+                <select name="car-year">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+                <br>
+                <br>
+                <input type="button" value="Choose all" name="choose-all">
+                <br>
+                <br>
+
+                <label for="password">Enter Password</label>
+                <br>
+                <input type="password" name="password" id="password" required>
+                <br>
+                <label for="confirm-password">Confirm Password</label>
+                <br>
+                <input type="password" name="confirm-password" id="confirm-password" required>
+
+                <br>
+                <br>
+                <input type="hidden" name="hidden-field" value="secret velue">
+                <br>
+                <br>
+                
+                <label for="exp">Write your experience</label>
+                <br>
+                <textarea id="exp" rows="10" cols="50"></textarea>
+                <br>
+                <br>
+                <label for="avatar">Upload your photo</label>
+                <input type="file" id="avatar" name="avatar">
+
+                <input type="submit" value="Sign Up" name="sign-up">
+            </fieldset>
+        </form>
+    </body>
+</html>
