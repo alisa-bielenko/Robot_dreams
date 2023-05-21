@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Hire me</title>
     </head>
     <body>
@@ -20,19 +21,26 @@
         <form action="/" name="contact-form">
             <fieldset>
                 <legend>Contact Form</legend>
-                <label for="e-mail">E - MAIL*    :</label>
-                <input type="text" id="e-mail" name="e-mail" placeholder="E-mail" minlength="5" maxlength="10" required>
-                <br>
-                <label for="descr">Description:</label>
-                <textarea id="descr" rows="6" cols="21"></textarea>
-                <br>
-                <label>Work type  :</label>
-                <select name="work-type">
-                    <option value="full-time-work">Full-time work</option>
-                    <option value="one-time-project">One-time project</option>
-                    <option value="remove-work">Remove work</option>
-                </select>
-                <br>
+                <table>
+                    <tr>
+                        <td><label for="e-mail">E-mail<span style="color: red;">*</span>:</label></td>
+                        <td><input type="text" id="e-mail" name="e-mail" placeholder="E-mail" minlength="5" maxlength="10" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="descr" size="12">Description:</label></td>
+                        <td><textarea id="descr" rows="6" cols="21"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label size="12">Work type:</label></td>
+                        <td>    
+                            <select name="work-type">
+                                <option value="full-time-work">Full-time work</option>
+                                <option value="one-time-project">One-time project</option>
+                                <option value="remove-work">Remove work</option>
+                           </select>
+                        </td>
+                    </tr>
+                </table>
                 <input type="submit" value="Hire me" name="hire-me">
                 <input type="hidden" name="hidden-field" value="secret velue">
             </fieldset>

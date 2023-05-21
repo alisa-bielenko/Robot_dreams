@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lesson HTML forms</title>
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Login Form</legend>
+                <label for="login">Login</label>
+                <input type="text" name="login" placeholder="login" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="password" required>
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+        <form action="" method="post">
+            <fieldset>
+                <legend>File Form</legend>
+                <label for="avatar">Avatar</label>
+                <input type="file" name="avatar" accept="image/png, image/jpeg">
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Color Form</legend>
+                <input type="color" name="color" value="#F1F1f1">
+                <label for="color"></label>
+            </fieldset>
+        </form>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Number Form</legend>
+                <label for="age">Age</label>
+                <input type="number" name="age" min="18" max="100" value="18" step="5">
+            </fieldset>
+        </form>
+        <form action="" method="post">
+            <fieldset>
+                    <legend>Selected Form</legend>
+                    <label for="phone">Choose your phone</label>
+                    <select name="phone" id="phone">
+                        <option value="">--Your phone--</option>
+                        <option value="apple" selected>Apple</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="nokia" disabled>Nokia</option>
+                    </select>
+            </fieldset>
+        </form>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Checkbox Form</legend>
+                <label for="checkbox1">Yes</label>
+                <input type="checkbox" name="checkbox1">
+                <label for="checkbox2">No</label>
+                <input type="checkbox" name="checkbox2" checked>
+                <label for="checkbox3">Don't know</label>
+                <input type="checkbox" name="checkbox3" disabled>
+            </fieldset>
+        </form>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Radio Form</legend>
+                <label for="radio">Yes</label>
+                <input type="radio" name="radio" checked>
+                <label for="radio">No</label>
+                <input type="radio" name="radio">
+            </fieldset>
+        </form>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Slider Form</legend>
+                <input type="range" name="volume" id="volume">
+                <output class="volume-output"></output>
+            </fieldset>
+        <br>
+        </form>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Feedback Form</legend>
+                <label for="name">Your Name</label>
+                <input type="text" name="name" placeholder="Your Name">
+                <label for="textarea">Text</label>
+                <textarea name="textarea" cols="30" rows="10" placeholder="Text..."></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
