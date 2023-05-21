@@ -1,0 +1,46 @@
+.name {
+    font-style: italic;
+    color: rgb(30, 4, 104);
+}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+    list-style-type: square;
+}
+
+.position {
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+b {
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+a:link {
+    color: #00f;
+}
+
+a:visited {
+    color: #005;
+}
+
+a:hover {
+    text-decoration: none;
+}
