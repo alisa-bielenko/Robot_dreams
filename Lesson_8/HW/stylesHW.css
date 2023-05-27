@@ -1,0 +1,61 @@
+.name {
+    font-style: italic;
+    color: rgb(30, 4, 104);
+    border-bottom: 3px solid salmon;
+}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+    list-style-type: square;
+}
+
+.position {
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    border-bottom: 3px solid salmon;
+}
+
+a:link {
+    color: #00f;
+}
+
+a:visited {
+    color: #005;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.my_photo {
+    padding: 10px;
+    border: 3px solid salmon;
+}
+
+table, td, th {
+    border: 1px solid black;
+} 
+  
+td {
+    background-color: rgb(144, 236, 240);
+}
+
+.title {
+    background-color: cornflowerblue;
+}

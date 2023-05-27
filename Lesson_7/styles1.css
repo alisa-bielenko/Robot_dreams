@@ -1,0 +1,28 @@
+table {
+    border: 1px solid black;
+    border-collapse: separate;
+}
+    
+.label {
+    display: flow-root;
+}
+
+/* input[type=text], select, textarea {
+    width: 80%;
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    resize: vertical;
+  } */
+.input1 {
+    margin: 23px;
+}
+
+.input3 {
+    margin: 8px;
+    width: 177px;
+}
+
+/* .descr {
+    font-display: ;
+} */

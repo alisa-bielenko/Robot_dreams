@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hire me</title>
+        <link href="styles1.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Hire me</h1>
+        <br>
+        <p>Contact information</p>
+        <table>
+            <tr>
+                <th>Phone</th>
+                <td>+3801111111</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Kyiv, 11 street, ap.126</td>
+            </tr>
+        </table>
+        <form action="/" name="contact-form">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label for="e-mail">E-mail<span style="color: red;">*</span>:</label>
+                <input type="text" class="input1" id="e-mail" name="e-mail" placeholder="E-mail" minlength="5" maxlength="10" required>
+                <br>
+                <label for="descr">Description:</label>
+                <textarea class="descr" rows="6" cols="21"></textarea>
+                <br>
+                <label>Work type:</label>    
+                <select name="work-type" class="input3">
+                    <option value="full-time-work">Full-time work</option>
+                    <option value="one-time-project">One-time project</option>
+                    <option value="remove-work">Remove work</option>
+                </select>
+                <br>
+                <input type="submit" value="Hire me" name="hire-me">
+                <input type="hidden" name="hidden-field" value="secret velue">
+            </fieldset>
+        </form>
+    </body>
+</html>

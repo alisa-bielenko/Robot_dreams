@@ -1,0 +1,53 @@
+body {
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/04/Free-Website-BAckgrounds1.jpg);
+    background-size: 1000px 300px;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;  */
+}
+
+h1 {
+    background: aquamarine;
+}
+
+span, div {
+    background-color: blue;
+}
+
+span {
+    max-width: 200px;
+    font-size: 2em;
+}
+
+.wrapper {
+    /* border-bottom-width: 10px;
+    border-bottom-style: dashed;
+    border-bottom-color: red; */
+    border: 10px solid red;
+    /* padding-top: 12px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    padding-left: 120px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-left: 10px; */
+    padding: 12px 150px 0 120px;
+    margin: 50px 25px 10px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.mover {
+    padding-left: 100px;
+}
+
+.email-input {
+    margin-left: 23px;
+}
+
+.width-params {
+    background: #756758;
+    margin: 20px;
+    width: 4cm;
+}
