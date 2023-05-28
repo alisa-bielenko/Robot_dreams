@@ -1,0 +1,51 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>Lesson 8</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Lesson 8</h1>
+        <span>
+            Hello World
+        </span>
+        <div class="wrapper">
+            <div>Hello <span class="mover">World</span></div>
+            <p>Hello World</p>
+            <div>Hello World</div>
+        </div>
+
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+        <form action="/" name="contact-form">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label for="e-mail">E-mail<span style="color: red;">*</span>:</label>
+                <input type="text" class="email-input" id="e-mail" name="e-mail" placeholder="E-mail" minlength="5" maxlength="10" required>
+                <br>
+                <label for="descr">Description:</label>
+                <textarea id="descr" rows="6" cols="21"></textarea>
+                <br>
+                <label>Work type:</label>    
+                <select name="work-type">
+                    <option value="full-time-work">Full-time work</option>
+                    <option value="one-time-project">One-time project</option>
+                    <option value="remove-work">Remove work</option>
+                </select>
+                <br>
+                <input type="submit" value="Hire me" name="hire-me">
+                <input type="hidden" name="hidden-field" value="secret velue">
+            </fieldset>
+
+            <div class="width-params">
+                My new block
+            </div>
+    </body>
+</html>
