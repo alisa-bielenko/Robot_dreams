@@ -1,7 +1,7 @@
 .name {
     font-style: italic;
     color: rgb(30, 4, 104);
-    border-bottom: 3px solid salmon;
+    border-bottom: 3px solid cornflowerblue;
 }
 
 body {
@@ -28,7 +28,7 @@ table {
 
 h2 {
     font-family: 'Pacifico', cursive;
-    border-bottom: 3px solid salmon;
+    border-bottom: 3px solid cornflowerblue;
 }
 
 a:link {
@@ -45,11 +45,13 @@ a:hover {
 
 .my_photo {
     padding: 10px;
-    border: 3px solid salmon;
+    border: 3px solid cornflowerblue;
 }
 
 table, td, th {
-    border: 1px solid black;
+    border: 1px solid blue;
+    border-collapse: unset;
+    width: -webkit-fill-available;
 } 
   
 td {
@@ -58,4 +60,31 @@ td {
 
 .title {
     background-color: cornflowerblue;
+}
+
+.flex-cont {
+    display: flex;
+    justify-content:space-between;
+}
+
+.my_photo {
+    width: 100px;
+    height: 120px;
+    float: right;
+}
+ 
+.s {
+    display: flex;
+    flex-direction: column;
+}
+
+.s2 {
+    width: 805px;
+    text-align: end;
+}
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
