@@ -27,6 +27,7 @@ table {
 }
 
 h2 {
+    text-decoration: underline;
     font-family: 'Pacifico', cursive;
     border-bottom: 3px solid cornflowerblue;
 }
@@ -73,17 +74,16 @@ td {
     float: right;
 }
  
-.s {
+.skills-container {
     display: flex;
     flex-direction: column;
 }
 
-.s2 {
-    width: 805px;
+.skills-header {
     text-align: end;
 }
 
-.s1 {
+.skills-list {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
