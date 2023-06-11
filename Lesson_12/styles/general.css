@@ -1,0 +1,14 @@
+@font-face {
+    font-family: croissantOne;
+    src: url(../fonts/croissant-one.regular.otf);
+}
+
+@font-face {
+    font-family: grislyBeast;
+    src: url(../fonts/grisly-beast.regular.otf);
+}
+
+body {
+    margin: 0;
+    font-family: croissantOne, sans-serif;
+}

@@ -1,0 +1,49 @@
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    height: 70px;
+    width: 70px;
+    margin: 0 150px;
+}
+
+.work-hours p {
+    margin: 10px 0;
+}
+
+.work-address p {
+    width: 210px;
+    line-height: 25px;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    background: #00CC66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 17px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+}
+
+nav a:hover {
+    background: #009926;
+}
+
+nav a:nth-child(2) {
+    margin: 0 120px;
+}
