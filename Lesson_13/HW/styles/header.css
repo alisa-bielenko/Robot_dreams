@@ -1,0 +1,58 @@
+header {
+    background-color: #FFECB3;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+.header-nav {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+header img {
+    height: 70px;
+    width: 70px;
+    margin: 0 150px;
+}
+
+.work-hours p {
+    margin: 10px 0;
+}
+
+.work-adress p {
+    width: 210px;
+    line-height: 25px;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    background: #804000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-family: Acme;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+}
+
+nav a:hover {
+    background: #ff8000;
+}
+
+nav a:nth-child(2) {
+    margin: 0 120px;
+}
