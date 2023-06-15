@@ -3,6 +3,10 @@
     src: url(../fonts/Acme-Regular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFECB3;
     margin: 0;
