@@ -56,3 +56,36 @@ nav a:hover {
 nav a:nth-child(2) {
     margin: 0 120px;
 }
+
+nav button {
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--main-heder-color);
+    position: absolute;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    display: none;
+}
+
+nav button span {
+    width: 25px;
+    height: 1px;
+    display: inline-block;
+    background: #fff;
+}
+
+@media screen and (max-width: 799px) {
+    .work-hours, 
+    .work-adress,
+    .nav__header {
+      display: none;
+    }
+    nav button {
+        display: flex;
+    }
+}

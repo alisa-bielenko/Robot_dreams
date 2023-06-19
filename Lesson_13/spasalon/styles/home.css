@@ -86,3 +86,33 @@ main a:hover {
     font-size: 20px;
     line-height: 60px;
 }
+
+@media screen and (max-width: 799px) {
+    main h1 {
+      display: none;
+    }
+    main a {
+      width: 150px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    main .main-img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    main .main-img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .service-container {
+        display: block;
+    }
+    .service-container div {
+        width: 100%;
+    }
+}
