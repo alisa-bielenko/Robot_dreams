@@ -21,3 +21,20 @@ img:hover {
     transform: scale(1.5);
     transition: all 1s linear;
 }
+
+@media screen and (max-width: 649px) {
+    main {
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+    main img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .footer {
+      display: none;
+    }
+}
