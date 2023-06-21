@@ -13,6 +13,7 @@ main .main-img {
     background-image: url(../img/main1.jpg);
     background-size: cover;
     background-position: center;
+    opacity: 0.9;
 }
 
 main h1 {
@@ -22,6 +23,7 @@ main h1 {
     color: var(--main-button-color);
     font-family: Acme;
     font-size: 65px;
+    text-shadow: 10px 10px 10px #000;
 }
 
 main a {
@@ -80,6 +82,13 @@ main a:hover {
     width: 250px;
     height: 150px;
     margin-right: 20px;
+    box-shadow: 5px 5px 10px var(--main-heder-color);
+}
+
+.service img:hover {
+    transform: scale(1.2);
+    transition: all 1s linear;
+    box-shadow: 10px 10px 10px;
 }
 
 .service span {
@@ -114,5 +123,12 @@ main a:hover {
     }
     .service-container div {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .service img:hover {
+        transform: none;
+        transition: none;
     }
 }

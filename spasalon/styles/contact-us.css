@@ -76,6 +76,7 @@ h2 {
 
 .address-map iframe {
     border: 1px solid var(--main-border-color) !important;
+    filter: grayscale(0.8);
 }
 
 .form-position {
