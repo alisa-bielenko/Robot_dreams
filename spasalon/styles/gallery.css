@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+main img {
+    width: 33%;
+    margin: 0 5px 5px 0;
+}
+
+h1 {
+    margin-top: 150px;
+    text-align: center;
+}
+
+img:hover {
+    transform: scale(1.5);
+    transition: all 1s linear;
+}
+
+@media screen and (max-width: 649px) {
+    main {
+        display: block;
+        width: 200px;
+        height: unset;
+    }
+    main img {
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width: 649px) {
+    .footer {
+      display: none;
+    }
+} */
