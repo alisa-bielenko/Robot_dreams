@@ -37,6 +37,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 10px 10px 10px #000;
 }
 
 nav a {
@@ -87,5 +88,8 @@ nav button span {
     }
     nav button {
         display: flex;
+    }
+    nav {
+        box-shadow: none;
     }
 }
