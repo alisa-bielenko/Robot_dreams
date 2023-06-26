@@ -61,7 +61,7 @@ h1 {
 h2 {
     margin-bottom: 0;
     font-size: 2em;
-    text-align: center;
+    text-align: left;
 }
 
 .contact-info p, .contact-info span {
@@ -85,10 +85,27 @@ h2 {
 }
 
 .contact-form {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    animation-name: form-animation;
+    animation-duration: 2s;
+}
+
+@keyframes form-animation {
+    0% {
+        opacity: 0%;
+        transform: scale(200%);
+    }
+    50% {
+        opacity: 70%;
+        transform: scale(150%);
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(100%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
 }
 
 .contact-form label {
@@ -160,10 +177,13 @@ h2 {
     border-radius: var(--main-border-radius);
     font-family: Acme;
     color: var(--main-button-color);
+    transition: all 1s;
 }
 
 .contact-form input[type="submit"]:hover {
     background-color: var(--main-hover-color);
     cursor: pointer;
+    transform: rotate(180deg);
+    color: white;
 }
 

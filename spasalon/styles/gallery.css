@@ -10,8 +10,8 @@ main {
 main img {
     width: 33%;
     margin: 0 5px 5px 0;
-    filter: grayscale(80%);
-    opacity: 0.7;
+    /* filter: grayscale(80%);
+    opacity: 0.7; */
 }
 
 h1 {
@@ -20,12 +20,27 @@ h1 {
 }
 
 img:hover {
-    transform: scale(1.5);
     transition: all 1s linear;
-    filter: unset;
     position: relative;
     z-index: 10;
-    opacity: 1;
+    animation-name: img-animation;
+    animation-duration: 2s;
+}
+
+@keyframes img-animation {
+    0% {
+        filter: grayscale(80%);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        filter: unset;
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    
 }
 
 @media screen and (max-width: 649px) {
