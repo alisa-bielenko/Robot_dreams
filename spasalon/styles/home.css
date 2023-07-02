@@ -13,7 +13,21 @@ main .main-img {
     background-image: url(../img/main1.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.9;
+    opacity: 0.5;
+}
+
+main .main-img:hover {
+    animation-name: main-img;
+    animation-duration: 2s;
+}
+
+@keyframes main-img {
+    0% {
+        opacity: 60%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 main h1 {
@@ -86,9 +100,19 @@ main a:hover {
 }
 
 .service img:hover {
-    transform: scale(1.2);
-    transition: all 1s linear;
-    box-shadow: 10px 10px 10px;
+    animation-name: service-img;
+    animation-duration: 2s;
+}
+
+@keyframes service-img {
+    0% {
+        opacity: 50%;
+    }
+    100% {
+        transform: scale(1.2);
+        transition: all 1s linear;
+        box-shadow: 10px 10px 10px;
+    }
 }
 
 .service span {
