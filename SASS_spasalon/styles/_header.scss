@@ -1,0 +1,97 @@
+@import "variables";
+
+header {
+    background-color: $main-bc-color;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    top: 0;
+
+    img {
+        height: 70px;
+        width: 70px;
+        margin: 0 150px;
+    }
+}
+
+.header-nav {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+.work-hours p {
+    margin: 10px 0;
+}
+
+.work-adress p {
+    width: 210px;
+    line-height: 25px;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    margin: $main-element-margin;
+    background: $main-heder-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px #000;
+
+    a {
+        font-family: Acme;
+        color: $main-button-color;
+        text-decoration: none;
+        font-size: 25px;
+        padding: $main-element-padding;
+        height: 60px;
+        line-height: 60px;
+
+        &:hover {
+            background: $main-hover-color;
+        }
+
+        &:nth-child(2) {
+            margin: 0 120px;
+        }
+    }  
+
+    button {
+        border: 1px solid #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $main-heder-color;
+        position: absolute;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        display: none;
+
+        span {
+            width: 25px;
+            height: 1px;
+            display: inline-block;
+            background: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .work-hours, 
+    .work-adress,
+    .nav__header {
+      display: none;
+    }
+    nav button {
+        display: flex;
+    }
+    nav {
+        box-shadow: none;
+    }
+}

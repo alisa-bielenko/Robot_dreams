@@ -1,0 +1,36 @@
+@import "variables";
+
+@font-face {
+    font-family: Acme;
+    src: url(../../fonts/Acme-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $main-bc-color;
+    margin: $main-element-margin;
+    font-family: Acme;
+    overflow-x: hidden;
+    margin-top: 70px;
+}
+
+.go-back {
+    position: fixed;
+    bottom: 124px;
+    right: 24px;
+    background-color: $main-heder-color;
+    color: $main-button-color;
+    padding: 16px;
+    display: block;
+}
+
+.footer {
+    background-color: $main-footer-color;
+    color: $main-button-color;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
+}
