@@ -298,7 +298,7 @@ nav a:nth-child(2) {
 
 .contactus {
   width: 770px;
-  margin: 150px auto 200px;
+  margin: 200px 150px 100px;
 }
 .contactus h1 {
   text-align: center;
@@ -323,96 +323,6 @@ nav a:nth-child(2) {
 .contactus .address-map iframe {
   border: 1px solid #000000 !important;
   filter: grayscale(0.8);
-}
-.contactus .form-position {
-  position: relative;
-  height: 750px;
-}
-.contactus .contact-form {
-  animation-name: form-animation;
-  animation-duration: 2s;
-}
-@keyframes form-animation {
-  0% {
-    opacity: 0%;
-    transform: scale(200%);
-  }
-  50% {
-    opacity: 70%;
-    transform: scale(150%);
-  }
-  100% {
-    opacity: 100%;
-    transform: scale(100%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-  }
-}
-.contactus .contact-form label {
-  display: block;
-  font-size: 1.3em;
-  margin-top: 10px;
-}
-.contactus .contact-form input[type=text] {
-  width: 400px;
-  height: 30px;
-  outline: 0;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  padding: 0 15px;
-  font-size: 1.2em;
-}
-.contactus .contact-form input[type=text]:focus {
-  border: 2px solid #ff7d00;
-}
-.contactus .contact-form input[type=text]::placeholder {
-  color: #000000;
-  opacity: 0.7;
-}
-.contactus .contact-form input[type=email] {
-  width: 400px;
-  height: 30px;
-  outline: 0;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  padding: 0 15px;
-  font-size: 1.2em;
-}
-.contactus .contact-form input[type=email]:focus {
-  border: 2px solid #ff7d00;
-}
-.contactus .contact-form input[type=email]::placeholder {
-  color: #ede7e3;
-  opacity: 0.7;
-}
-.contactus .contact-form textarea {
-  width: 400px;
-  height: 200px;
-  padding: 15px;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  resize: none;
-  font-size: 1.2em;
-}
-.btn-primary [type=submit] {
-  width: 170px;
-  height: 40px;
-  display: block;
-  background-color: #6f1d1b  !important;
-  font-size: 1.5em;
-  margin-top: 30px;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  color: #ede7e3;
-  transition: all 1s;
-}
-.contactus .contact-form input[type=submit]:hover {
-  background-color: #ff7d00;
-  cursor: pointer;
-  transform: rotate(180deg);
-  color: white;
 }
 
 .gallery-name h1 {
