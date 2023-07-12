@@ -1,0 +1,404 @@
+main {
+    .section-1 { 
+        margin: 0;
+        box-sizing: border-box;
+        background-color: $main-color;
+        height: 763px;
+        width: 1903px;
+
+        .grey-color {
+            height: 763px;
+            width: 912px;
+            background-color: $secondary-color;
+        }
+
+        .content {
+            box-sizing: border-box;
+            width: 1199px;
+            height: 509px;
+            border-radius: 40px;
+            border: 4px solid $secondary-color;
+            background: $main-color;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 275px;
+            top: 940px;
+
+            .right-content {
+                width: 640px;
+                height: 509px;
+                margin-top: 90px;
+                margin-left: 45px;
+
+                & h2 {
+                    color: #FFF;
+                    font-size: 58px;
+                    font-style: normal;
+                    font-weight: bold;
+                }
+
+                & p {
+                    width: 520px;
+                    height: 110px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    color: $footer-color;
+                    font-family: Poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 22px;
+                }  
+            }
+
+            .icon-v {
+                display: flex;
+                flex-direction: row;
+                color: #FFF;
+                text-decoration: none;
+                padding-bottom: 20px;
+                padding-right: 14px;
+            }
+              
+            .icon-content {
+                padding-left: 14px;
+            }
+        }
+
+        .button {
+            top: 1495px;
+            left: 857px;
+            position: absolute;
+    
+            .button-help-section {
+                border-radius: 10px;
+                width: 192px;
+                height: 62px;
+                background-color: $main-color;
+                border: 1px solid $secondary-color;
+                color: $secondary-color;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+        
+                &:hover {
+                  background-color: $footer-color;
+                  box-shadow: 0 4px 8px 0 rgba(245, 239, 239, 0.2), 0 6px 20px 0 $secondary-color;
+                }      
+            }
+        }
+        @media screen and (max-width: 1600px) {
+            & {
+                width: 1785px;
+                .content {
+                  left: 275px;
+                  top: 840px;
+                }
+                .button {
+                  top: 1395px;
+                  left: 857px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1450px) {
+            & {
+                width: 1380px;
+                .grey-color {
+                    height: 763px;
+                    width: 712px;
+                }
+                .content {
+                  left: 75px;
+                  top: 710px;
+                }
+                .button {
+                  top: 1265px;
+                  left: 655px;  
+                }
+            }
+        }
+    }
+
+    .services {
+        width: 1903px;
+        height: 674px;
+        background-color: $main-color;
+
+        @media screen and (max-width: 1600px) {
+            & {
+                width: 1783px;
+                &-top-content {
+                    h2 {
+                      padding-top: 0;
+                    } 
+                }
+                .button {
+                  top: 2135px;
+                  left: 857px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1450px) {
+            & {
+                width: 1380px;
+                height: 300px;
+                &-top {
+                    height: 300px;
+                }
+                &-top-content h2 {
+                    position: absolute;
+                    left: 310px;
+                    bottom: 60px;
+                }
+
+                &-icon-group {
+                    display: none;
+                }
+                &-bottom {
+                    display: none;
+                }
+                .button {
+                    top: 1535px;
+                    left: 655px;
+                  .button-help-services {
+                    background-color: $footer-color;
+                  } 
+                }
+            }
+        }
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 58px;
+            font-weight: bold;
+            padding-top: 35px;
+        }
+          
+        &-icon {
+            width: 300px;
+            height: 300px;
+        }
+
+        &-top {
+            height: 420px;
+            background-image: url(../img/cover-decor.png);
+            filter:opacity(30%);
+        }
+    
+        &-top-content {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 300px;
+            top: 1580px;
+
+            &-icon-group {
+                height: 180px;
+                color: $secondary-color;
+                width: 1600px;
+                gap: 83px;
+            }
+        }
+
+        &-bottom {
+            height: 260px;
+            background-color: $secondary-color;
+            z-index: 10;
+            padding-top: 28px;
+
+            h3 {
+                color: $main-color;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+
+            p {
+                color: $footer-color;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                padding-top: 14px;
+                height: 66px;
+                width: 180px;
+                margin: 0 auto;
+            }
+        }
+    }
+    .button {
+        top: 2185px;
+        left: 857px;
+        position: absolute;
+
+        .button-help-services {
+            border-radius: 10px;
+            width: 192px;
+            height: 62px;
+            background-color: $main-color;
+            border: 1px solid $secondary-color;
+            color: $secondary-color;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+        
+            &:hover {
+                background-color: $footer-color;
+                box-shadow: 0 4px 8px 0 rgba(245, 239, 239, 0.2), 0 6px 20px 0 $secondary-color;
+            }      
+        }
+    }
+
+    .testymonials {
+        width: 1903px;
+        height: 718px;
+        background-color: $main-color;
+
+        @media screen and (max-width: 1600px) {
+            & {
+                width: 1783px;
+            }
+        }
+        @media screen and (max-width: 1450px) {
+            & {
+                width: 1380px;
+                height: 1250px;
+                padding-top: 110px;
+                .container {
+                    .testymonials-container-none {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    
+        h2 {
+            color: $secondary-color;
+            font-size: 58px;
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &-text-content {
+          display: flex;
+          flex-direction: column;
+          .stars {
+            display: flex;
+            padding-left: 14px;
+            padding-bottom: 30px;
+          }
+
+          h3 {
+            padding-top: 25px;
+            padding-left: 14px;
+            color: $main-color;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+          }
+
+          p {
+            color: $footer-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            width: 423px;
+            height: 110px;
+            padding-top: 8px;
+            padding-left: 14px;
+          }
+        }
+
+        .container {
+            width: 1200px;
+            .vision-list-item {
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                border-radius: 48px;
+                width: 577px;
+                height: 233px;
+                background-color: $secondary-color;
+                .foto-woman {
+                  padding-top: 30px;
+                  padding-left: 20px;
+                  width: 80px;
+                  height: 80px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        margin: 0;
+        padding-top: 30px;
+        width: 1903px;
+        height: 520px;
+        background-color: $secondary-color;
+
+        &-form input[type="text"]:hover {
+            background-color: $footer-color;
+        }
+              
+        &-form input[type="email"]:hover {
+            background-color: $main-color;
+             opacity: 0.5;
+        }
+    
+        h2 {
+            color: $main-color;
+            text-align: center;
+            font-size: 58px;
+            font-weight: bold;
+            line-height: normal;
+        }
+    
+        &-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: baseline;
+
+            .form-size {
+                margin-top: 14px;
+                padding: 20px;
+                width: 370px;
+                height: 64px;
+                border-radius: 40px;
+                opacity: 0.5;
+                background-color: $main-color;
+            }
+    
+            .form-size-mail {
+                margin-top: 14px;
+                 padding: 20px;
+                width: 184px;
+                height: 64px;
+                border-radius: 40px;
+                background-color: $main-color;
+            }
+        }
+        @media screen and (max-width: 1600px) {
+            & {
+                width: 1783px;
+            }
+        }
+
+        @media screen and (max-width: 1450px) {
+            & {
+                width: 1380px;
+            }
+        }
+    }
+}

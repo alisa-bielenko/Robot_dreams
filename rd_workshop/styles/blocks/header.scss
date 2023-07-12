@@ -1,0 +1,132 @@
+.header {
+    box-sizing: border-box;
+    background-image: url(../img/home.png);
+    width: 1903px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    &-top {
+      display: flex;
+      padding-top: 136px ;
+      height: 81px;
+      justify-content: center;
+  
+      @media screen and (max-width: 1600px) {
+          & {
+              width: 1900px;
+              padding-top: 30px;
+          }
+      }
+      @media screen and (max-width: 1450px) {
+          & {
+              width: 1400px;
+              padding-top: 30px;
+          }
+      }
+  
+      .img-logo {
+          width: 80px;
+          height: 87px;
+      }
+        
+      .name-logo {
+          color: $secondary-color;
+          text-transform: uppercase;
+          height: 81px;
+          width: 324px;
+  
+          h3 {
+              font-weight: bold;
+              font-size: 46px;
+              letter-spacing: 0.2px;
+              line-height: 104.5%;
+              margin-bottom: 0;
+          }
+  
+          p {
+              font-weight: bold;
+              text-align: center;
+              font-size: 32px;
+              letter-spacing: 20px;
+              line-height: 104.5%;
+          }
+      }
+    }
+  
+    .header-center {
+      padding-top: 140px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      h1 {
+          color: $secondary-color;
+          text-align: center;
+          font-size: 50px;
+          font-weight: 800;
+          line-height: 118.5%;
+          margin-bottom: 15px;
+        }
+
+      p {
+          width: 520px;
+          color: $secondary-color;
+          text-align: center;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 22px;
+        }
+  
+      @media screen and (max-width: 1450px){
+          & {
+              width: 1450px;
+              h1, p {
+                  display: none;
+              }
+          }
+        }
+  
+      .icon {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          width: 362px;
+          height: 100px;
+          gap: 100px;
+  
+          &-group {
+            text-decoration: none;
+            width: 100px;
+            height: 100px;
+            color: #FFF;
+          }
+  
+          &-name {
+            display: block;
+            width: 110px;
+          }
+        } 
+  
+        .button {
+          padding-top: 110px;
+          padding-bottom: 116px;
+          .button-help {
+            border-radius: 10px;
+            width: 192px;
+            height: 62px;
+            background-color: $main-color;
+            border: 1px solid $secondary-color;
+            color: $secondary-color;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            &:hover {
+              background-color: $footer-color;
+              box-shadow: 0 4px 8px 0 rgba(245, 239, 239, 0.2), 0 6px 20px 0 $secondary-color;
+            }      
+          }
+        }
+    }
+}
