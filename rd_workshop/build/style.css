@@ -10,8 +10,7 @@ body {
 .header {
   box-sizing: border-box;
   background-image: url(../img/home.png);
-  width: 100%;
-  height: 840px;
+  width: 1903px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -23,6 +22,13 @@ body {
 }
 @media screen and (max-width: 1600px) {
   .header-top {
+    width: 1900px;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .header-top {
+    width: 1400px;
     padding-top: 30px;
   }
 }
@@ -31,7 +37,7 @@ body {
   height: 87px;
 }
 .header-top .name-logo {
-  color: #FFF;
+  color: #F2F2F2;
   text-transform: uppercase;
   height: 81px;
   width: 324px;
@@ -58,7 +64,7 @@ body {
   align-items: center;
 }
 .header .header-center h1 {
-  color: #FFF;
+  color: #F2F2F2;
   text-align: center;
   font-size: 50px;
   font-weight: 800;
@@ -67,13 +73,16 @@ body {
 }
 .header .header-center p {
   width: 520px;
-  color: #FFF;
+  color: #F2F2F2;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
   line-height: 22px;
 }
 @media screen and (max-width: 1450px) {
+  .header .header-center {
+    width: 1450px;
+  }
   .header .header-center h1, .header .header-center p {
     display: none;
   }
@@ -96,13 +105,9 @@ body {
   display: block;
   width: 110px;
 }
-@media screen and (max-width: 1060px) {
-  .header .header-center .icon {
-    display: none;
-  }
-}
 .header .header-center .button {
-  padding-top: 80px;
+  padding-top: 110px;
+  padding-bottom: 116px;
 }
 .header .header-center .button .button-help {
   border-radius: 10px;
@@ -110,7 +115,7 @@ body {
   height: 62px;
   background-color: #50B2EA;
   border: 1px solid #F2F2F2;
-  color: white;
+  color: #F2F2F2;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -120,27 +125,16 @@ body {
   background-color: #19435A;
   box-shadow: 0 4px 8px 0 rgba(245, 239, 239, 0.2), 0 6px 20px 0 #F2F2F2;
 }
-@media screen and (max-width: 830px) {
-  .header .icon {
-    display: none;
-  }
-  .header .button {
-    position: absolute;
-    top: 100px;
-  }
-}
 
-main {
-  width: 1903px;
-}
 main .section-1 {
   margin: 0;
   box-sizing: border-box;
   background-color: #50B2EA;
   height: 763px;
+  width: 1903px;
 }
 main .section-1 .grey-color {
-  height: 100%;
+  height: 763px;
   width: 912px;
   background-color: #F2F2F2;
 }
@@ -204,7 +198,7 @@ main .section-1 .button .button-help-section {
   height: 62px;
   background-color: #50B2EA;
   border: 1px solid #F2F2F2;
-  color: white;
+  color: #F2F2F2;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -214,17 +208,86 @@ main .section-1 .button .button-help-section:hover {
   background-color: #19435A;
   box-shadow: 0 4px 8px 0 rgba(245, 239, 239, 0.2), 0 6px 20px 0 #F2F2F2;
 }
+@media screen and (max-width: 1600px) {
+  main .section-1 {
+    width: 1785px;
+  }
+  main .section-1 .content {
+    left: 275px;
+    top: 840px;
+  }
+  main .section-1 .button {
+    top: 1395px;
+    left: 857px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  main .section-1 {
+    width: 1380px;
+  }
+  main .section-1 .grey-color {
+    height: 763px;
+    width: 712px;
+  }
+  main .section-1 .content {
+    left: 75px;
+    top: 710px;
+  }
+  main .section-1 .button {
+    top: 1265px;
+    left: 655px;
+  }
+}
 main .services {
   width: 1903px;
   height: 674px;
   background-color: #50B2EA;
+}
+@media screen and (max-width: 1600px) {
+  main .services {
+    width: 1783px;
+  }
+  main .services-top-content h2 {
+    padding-top: 0;
+  }
+  main .services .button {
+    top: 2135px;
+    left: 857px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  main .services {
+    width: 1380px;
+    height: 300px;
+  }
+  main .services-top {
+    height: 300px;
+  }
+  main .services-top-content h2 {
+    position: absolute;
+    left: 310px;
+    bottom: 60px;
+  }
+  main .services-icon-group {
+    display: none;
+  }
+  main .services-bottom {
+    display: none;
+  }
+  main .services .button {
+    top: 1535px;
+    left: 655px;
+  }
+  main .services .button .button-help-services {
+    background-color: #19435A;
+  }
 }
 main .services h2 {
   color: #FFF;
   text-align: center;
   font-size: 58px;
   font-weight: bold;
-  padding-top: 40px;
+  padding-top: 35px;
 }
 main .services-icon {
   width: 300px;
@@ -244,7 +307,7 @@ main .services-top-content {
 }
 main .services-top-content-icon-group {
   height: 180px;
-  color: #FFF;
+  color: #F2F2F2;
   width: 1600px;
   gap: 83px;
 }
@@ -282,7 +345,7 @@ main .button .button-help-services {
   height: 62px;
   background-color: #50B2EA;
   border: 1px solid #F2F2F2;
-  color: white;
+  color: #F2F2F2;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -297,8 +360,24 @@ main .testymonials {
   height: 718px;
   background-color: #50B2EA;
 }
+@media screen and (max-width: 1600px) {
+  main .testymonials {
+    width: 1783px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  main .testymonials {
+    width: 1380px;
+    height: 1250px;
+    padding-top: 110px;
+  }
+  main .testymonials .container .testymonials-container-none {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 main .testymonials h2 {
-  color: #FFF;
+  color: #F2F2F2;
   font-size: 58px;
   text-align: center;
   font-style: normal;
@@ -343,7 +422,7 @@ main .testymonials .container .vision-list-item {
   border-radius: 48px;
   width: 577px;
   height: 233px;
-  background-color: #FFF;
+  background-color: #F2F2F2;
 }
 main .testymonials .container .vision-list-item .foto-woman {
   padding-top: 30px;
@@ -356,7 +435,7 @@ main .contact {
   padding-top: 30px;
   width: 1903px;
   height: 520px;
-  background-color: #FFF;
+  background-color: #F2F2F2;
 }
 main .contact-form input[type=text]:hover {
   background-color: #19435A;
@@ -395,14 +474,14 @@ main .contact-form .form-size-mail {
   border-radius: 40px;
   background-color: #50B2EA;
 }
-@media screen and (max-width: 576px) {
-  main {
-    height: 300px;
+@media screen and (max-width: 1600px) {
+  main .contact {
+    width: 1783px;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  main {
-    height: 450px;
+@media screen and (max-width: 1450px) {
+  main .contact {
+    width: 1380px;
   }
 }
 
@@ -410,6 +489,19 @@ main .contact-form .form-size-mail {
   width: 100%;
   height: 80px;
   background: #19435A;
+}
+@media screen and (max-width: 1600px) {
+  .footer {
+    width: 1783px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .footer {
+    width: 1380px;
+    height: 80px;
+    background-color: #50B2EA;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
