@@ -37,36 +37,36 @@ console.log(`maxNumber = ` + maxNumber);
 console.log(`________________ # ______________________`);
 console.log(`_______________ while ___________________`);
 
-let elemetAdd = '#';
-let elemetPlus = '#';
+let elementAdd = '#';
+let elementPlus = '#';
 let index = 0;
 
 while (index < 5) {
-   console.log(elemetAdd);
-   elemetAdd = elemetAdd + elemetPlus;
+   console.log(elementAdd);
+   elementAdd = elementAdd + elementPlus;
    index++;
 }
 
 
 console.log(`_____________ do .. while _______________`);
 
-let elemetAdd1 = '#';
-let elemetPlus1 = '#';
+let elementAdd1 = '#';
+let elementPlus1 = '#';
 let k = 0;
 
 do {
-   console.log(elemetAdd1);
-   elemetAdd1 = elemetAdd1 + elemetPlus1;
+   console.log(elementAdd1);
+   elementAdd1 = elementAdd1 + elementPlus1;
    k++;
 } while (k < 5)
 
 
 console.log(`________________ for ____________________`);
 
-let elemetAdd3 = '#';
-let elemetPlus3 = '#';
+let elementAdd3 = '#';
+let elementPlus3 = '#';
 
 for (let j = 0; j < 5; j++) {
-   console.log(elemetAdd3);
-   elemetAdd3 = elemetAdd3 + elemetPlus3;
+   console.log(elementAdd3);
+   elementAdd3 = elementAdd3 + elementPlus3;
 }
