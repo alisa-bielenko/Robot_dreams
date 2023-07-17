@@ -9,7 +9,7 @@ let division = firstNumber / secondNumber;
 if ((firstNumber === ``) || (secondNumber === ``)) {
     alert(`Error: not enough data!`);
 } else 
-if (secondNumber == 0) {
+if (secondNumber === 0) {
     alert(`Error: mustn't be divided by 0`);
 } else 
 if (firstNumber < secondNumber) {
