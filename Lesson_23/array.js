@@ -1,15 +1,15 @@
 console.log(`____________ create Array _______________`);
 
-let Array = [371, null, 435, 5, false, 81, 101, 'name', 13, 40];
-console.log(Array);
+let arr = new Array(371, null, 435, 5, false, 81, 101, 'name', 13, 40);
+console.log(arr);
 
 console.log(`_______ sum of all Array number _________`);
 
 let sumAllNumber = 0;
 
-for (let i = 0; i < Array.length; i++) {
-   if (typeof Array[i] == typeof 1){
-      sumAllNumber = sumAllNumber + Array[i];
+for (let i = 0; i < arr.length; i++) {
+   if (typeof arr[i] == typeof 1){
+      sumAllNumber = sumAllNumber + arr[i];
    }  
 }
 
@@ -17,15 +17,15 @@ console.log(`sumAllNumber = ` + sumAllNumber);
 
 console.log(`____________ find min, max ______________`);
 
-let minNumber = Array[0];
-let maxNumber = Array[0]; 
+let minNumber = arr[0];
+let maxNumber = arr[0]; 
 
-for (let i = 0; i < Array.length; i++) {
-   if (typeof Array[i] == typeof 1){
-      if (Array[i] > maxNumber){
-         maxNumber = Array[i];
-      } else if (Array[i] < minNumber) {
-         minNumber = Array[i];
+for (let i = 0; i < arr.length; i++) {
+   if (typeof arr[i] == typeof 1){
+      if (arr[i] > maxNumber){
+         maxNumber = arr[i];
+      } else if (arr[i] < minNumber) {
+         minNumber = arr[i];
       }
    }  
 }
