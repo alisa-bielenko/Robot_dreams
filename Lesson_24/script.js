@@ -69,7 +69,7 @@ console.log(y);
 function maxNumber(y) {
    let max = y[0];
    for (let item of y) {
-      if (typeof(item) == typeof 1) {
+      if (typeof(item) === typeof 1) {
          if (max < item) {
             max = item;
          }
@@ -83,7 +83,7 @@ console.log('max number of array is ' + maxNumber(y));
 function minNumber(y) {
    let min = y[0];
    for (let item of y) {
-      if (typeof(item) == typeof 1) {
+      if (typeof(item) === typeof 1) {
          if (min > item) {
             min = item;
          }

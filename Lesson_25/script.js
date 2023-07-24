@@ -17,7 +17,7 @@ console.log('_________sayHello___________');
 let user = {
   name: "Alisa",
   age: "45",
-  sayHello: function () {
+  sayHello: function() {
     console.log("Hello, I'm " + this.name + ", I'm " + this.age + " years old!");
   },
 };
@@ -30,16 +30,16 @@ let myCalculator = {
   fistNumber: 0,
   secondNumber: 0,
 
-  ask: function () {
+  ask: function() {
     this.fistNumber = +prompt('Enter first number = ');
     this.secondNumber = +prompt('Enter second number = ');
   },
 
-  sum: function () {
+  sum: function() {
     return this.fistNumber + this.secondNumber;
   },
 
-  mul: function () {
+  mul: function() {
     return this.fistNumber * this.secondNumber;
   },
 
