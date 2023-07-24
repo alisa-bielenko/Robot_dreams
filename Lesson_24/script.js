@@ -60,6 +60,7 @@ let division = (a,b) => {
 
 division(+numberFirst,+numberSecond);
 
+
 console.log(`________________ array ____________________`);
 
 let y = [1, 607, null, 15, 0, 509, 111, 7, false, 13];
