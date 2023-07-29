@@ -5,12 +5,12 @@ function Accumulator() {
 }
 
 Accumulator.prototype.increment = function() {
-  this.digit += 1;
+  this.digit++;
   console.log(`Increment = ${this.digit}`);
 }
 
 Accumulator.prototype.decrement = function() {
-  this.digit -= 1;
+  this.digit--;
   console.log(`Decrement = ${this.digit}`);
 }
 
