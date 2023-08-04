@@ -1,0 +1,15 @@
+html {
+    background-color: aquamarine;
+}
+
+.minValue {
+    color: aqua;
+    background-color: bisque;
+    width: 250px;
+}
+
+.maxValue {
+    color: darkblue;
+    background-color: cornflowerblue;
+    width: 250px;
+}
