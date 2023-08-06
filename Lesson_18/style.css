@@ -1,0 +1,29 @@
+main {
+  background: #787777;
+}
+main nav {
+  width: 400px;
+}
+main nav.selected {
+  font-size: 30px;
+}
+main nav input {
+  border: none;
+}
+main nav input[disabled] {
+  border: 1px solid black;
+}
+main nav ul {
+  padding: 10px;
+}
+main nav ul li {
+  background: green;
+}
+main nav ul li a {
+  text-decoration: none;
+}
+main nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
