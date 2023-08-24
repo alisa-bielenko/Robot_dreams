@@ -28,4 +28,4 @@ describe('test function of changing class', () => {
         // After the click, 'big-img' class shold be removed
         expect(img.classList.remove('big-img')).toBe(undefined);
     });
-});
+})
