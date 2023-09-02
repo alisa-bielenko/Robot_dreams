@@ -1,0 +1,15 @@
+.list-item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.list-location {
+    margin-left: 30px;
+}
+
+.button-container {
+    gap: 10px; 
+}
