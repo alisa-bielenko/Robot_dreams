@@ -1,0 +1,20 @@
+html {
+    background-color: aquamarine;
+}
+
+#countdown {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#timer {
+    background-color: bisque;
+    color: blue;
+}
+
+img.newyear {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}

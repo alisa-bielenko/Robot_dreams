@@ -1,0 +1,158 @@
+@import "variables";
+
+main {
+    position: relative;
+
+    h1 {
+        position: absolute;
+        bottom: 100px;
+        left: 10%;
+        color: $main-button-color;
+        font-family: Acme;
+        font-size: 65px;
+        text-shadow: 10px 10px 10px #000;
+    }
+
+    a {
+        position: absolute;
+        bottom: 50px;
+        left: 10%;
+        text-align: center;
+        line-height: 50px;
+        background: $main-heder-color;
+        width: 240px;
+        height: 50px;
+        text-decoration: none;
+        font-size: 27px;
+        color: $main-button-color;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: $main-hover-color;
+        }
+    }
+    
+    img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .main-img {
+        width: 100%;
+        height: 450px;
+        background-image: url(../../img/main1.jpg);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+
+        &:hover {
+            animation-name: main-img;
+            animation-duration: 2s;
+        }
+    }
+}
+
+@keyframes main-img {
+    0% {
+        opacity: 60%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.service {
+    width: 100%;
+    padding: $main-element-padding;
+
+    h2 {
+        margin: 0;
+        padding-top: 5px;
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+
+    h4 {
+        text-align: left;
+        font-size: 25px;
+    }
+
+    div {
+        width: 33%;
+    }
+}
+
+.service {
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+    img {
+        object-fit: cover;
+        width: 250px;
+        height: 150px;
+        margin-right: 20px;
+        box-shadow: 5px 5px 10px $main-heder-color;
+
+        &:hover {
+            animation-name: service-img;
+            @include time-animation (3s);
+        }
+    }
+    span {
+        font-size: 20px;
+        line-height: 60px;
+    }
+}
+
+@keyframes service-img {
+    0% {
+        opacity: 50%;
+    }
+    100% {
+        transform: scale(1.2);
+        transition: all 1s linear;
+        box-shadow: 10px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    main h1 {
+      display: none;
+    }
+    main a {
+      width: 150px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    main .main-img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    main .main-img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .service-container {
+        display: block;
+    }
+    .service-container div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .service img:hover {
+        transform: none;
+        transition: none;
+    }
+}
