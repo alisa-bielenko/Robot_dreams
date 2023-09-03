@@ -66,9 +66,9 @@ const boat = new Vehicle(30, 50, 51000, "lightblue");
 boat.getParametersVehicle();
 
 console.log("------Car Mercedes------");
-const mercedes = new Car(1.5, 5.5, 2200, "black", 4, 5);
+const mercedes = new Car(1.5, 5.5, 2290, "black", 4, 5);
 mercedes.getParametersCar();
 
 console.log("------Bike KROSS------");
-const kross = new Bike(0.8, 1.8, 18, "white", 2);
+const kross = new Bike(0.8, 1.8, 20, "white", 2);
 kross.getParametersBike();

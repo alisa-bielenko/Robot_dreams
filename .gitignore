@@ -9,6 +9,8 @@ firebase-debug.*.log*
 
 # Firebase cache
 .firebase/
+.firebaserc
+.firebase.json
 
 # Firebase config
 
@@ -64,3 +66,11 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+/Lesson_28
+/SASS_spasalon
+/Lesson_31
+/Lesson_4
+/Lesson_32
+/Lesson_32firebase
+/Lesson_29
