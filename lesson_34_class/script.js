@@ -61,7 +61,7 @@ class Bike extends Vehicle {
     }
 }
 
-console.log("------Vehicle boat------");
+console.log("------Vehicle Boat------");
 const boat = new Vehicle(30, 50, 51000, "lightblue");
 boat.getParametersVehicle();
 
