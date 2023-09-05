@@ -29,3 +29,29 @@ let myFunction = new CancelableAccumulator();
 myFunction.increment();
 myFunction.clear();
 myFunction.decrement();
+
+let img = document.querySelector('img');
+
+const addSomeClassToElement = (element) => {
+    element.addEventListener('click', () => {
+        if (element.classList.contains('test')) {
+            element.classList.remove('test');
+        } else {
+            element.classList.add('test');
+        }
+    });
+}
+
+addSomeClassToElement(img);
+
+
+let imgs = document.querySelector('.gallery');
+
+imgs.addEventListener('click', (event) => {
+    let img = event.target;
+    if (img.classList.contains('zoomed-img')) {
+        img.classList.remove('zoomed-img');   
+    } else {
+        img.classList.add('zoomed-img');
+    }
+});

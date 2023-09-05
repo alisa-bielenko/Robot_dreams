@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Список покупок</title>
+</head>
+<body>
+    <h1>My shopping list</h1>
+    <div class="input-container">
+        <input type="text" id="itemInput" placeholder="Введіть покупку">
+        <button onclick="addItem()">Add to the list</button>
+    </div>
+    <ul id="shoppingList"></ul>
+    <div class="buttons">
+        <button onclick="deleteCheckedItems()">Видалити відмічені</button>
+        <button onclick="editItems()">Редагувати відмічені</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -93,3 +93,52 @@ function minNumber(y) {
 }
 
 console.log('min number of array is ' + minNumber(y));
+
+function greeter(name) {
+   return `Hi, ${name}!`
+}
+
+greeter();
+console.log(greeter('Alla'));
+console.log(greeter('Alisa'));
+
+
+
+function greeter1(name1, partOfTheDay1) {
+   return `Good ${partOfTheDay1}, ${name1}!`;
+}
+console.log(greeter1('Paul', 'night'));
+console.log(greeter1('Anya', 'morning'));
+
+function double(num) {
+   return num * 2;
+}
+console.log(double(5));
+
+function getLargestExpressionResultOfTwo(a, b) {
+   if ((a+b) > (a-b)) {
+     return a + b;
+   }
+   return a - b;
+ }
+ console.log(getLargestExpressionResultOfTwo(-20, 5));
+
+ function getLargestExpressionResult(c, d) {
+  let result = c + d;
+
+  if ((c - d) > result) {
+    result = c - d;
+  }
+
+  if ((c * d) > result) {
+    result = c * d;
+  }
+
+  if ((c / d) > result) {
+    result = c / d;
+  }
+
+  return result;
+}
+console.log(getLargestExpressionResult(10, 5))
+console.log(getLargestExpressionResult(10, -5))
