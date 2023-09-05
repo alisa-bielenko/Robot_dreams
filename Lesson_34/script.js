@@ -22,7 +22,7 @@ class Vehicle {
     }
 
     getParametersVehicle() {
-        return this.getHeight(), this.getWidth(), this.getWeight(), this.getColor();
+        return this.getHeight() + this.getWidth() + this.getWeight() + this.getColor();
     }
 }
 
@@ -42,7 +42,7 @@ class Car extends Vehicle {
     }
 
     getParametersCar() {
-        return this.getParametersVehicle(), this.getNumberOfDoors(), this.getMaxPassangers();
+        return this.getParametersVehicle() + this.getNumberOfDoors() + this.getMaxPassangers();
     }
 }
 
@@ -57,11 +57,11 @@ class Bike extends Vehicle {
     }
 
     getParametersBike() {
-        return this.getParametersVehicle(), this.getNumberWheels();
+        return this.getParametersVehicle() + this.getNumberWheels();
     }
 }
 
-console.log("------Vehicle boat------");
+console.log("------Vehicle Boat------");
 const boat = new Vehicle(30, 50, 51000, "lightblue");
 boat.getParametersVehicle();
 
