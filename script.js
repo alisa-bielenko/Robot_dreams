@@ -11,11 +11,11 @@ function getAllPublic() {
     .then((data) => {
         data.forEach((element) => {
             publicHTML.innerHTML += `
-            <div class="card-body public">
-                <h5 class="card-title name">${element.name}</h5>
-                <p class="card-text email">email: ${element.email}</p>
-                <p class="card-text gender">gender: ${element.gender}</p>
-                <p class="card-text status">status: ${element.status}</p>
+            <div class="list-body public">
+                <h5 class="list-title name">${element.name}</h5>
+                <p class="list-text email">email: ${element.email}</p>
+                <p class="list-text gender">gender: ${element.gender}</p>
+                <p class="list-text status">status: ${element.status}</p>
                 <a href="index1.html" class="btn btn-primary" onclick="getContent('${element.id}')">Open all posts of this User</a>
             </div>
             `;

@@ -19,10 +19,10 @@ function getContentPost() {
         } else {
             data.forEach((element) => {
                 postsHTML.innerHTML += `
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">${element.title}</h4>
-                        <p class="card-text">${element.body}</p>
+                <div class="list">
+                    <div class="list-body">
+                        <h4 class="list-title">${element.title}</h4>
+                        <p class="list-text">${element.body}</p>
                     </div>
                 </div>
                 `;

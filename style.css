@@ -1,4 +1,4 @@
-.card-body.public {
+.list-body.public {
     background-color: #f0f0f0;
     padding: 10px;
     border: 1px solid #ccc;
@@ -6,19 +6,19 @@
     box-shadow: 0 0 20px rgba(65, 27, 218, 0.2);
 }
 
-.card-title.name {
+.list-title.name {
     font-size: 20px;
     font-weight: bold;
 }
 
-.card-text.email,
-.card-text.gender,
-.card-text.status {
+.list-text.email,
+.list-text.gender,
+.list-text.status {
     font-size: 16px;
     margin-top: 5px;
 }
 
-.card {
+.list {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     margin: 10px;
@@ -26,13 +26,14 @@
     box-shadow: 0 0 20px rgba(55, 21, 206, 0.2);
 }
 
-.card-title {
+.list-title {
     font-size: 18px;
     font-weight: bold;
 }
 
-.card-text {
+.list-text {
     text-align: left;
     font-size: 16px;
     margin-top: 5px;
+    padding-left: 10px;
 }
