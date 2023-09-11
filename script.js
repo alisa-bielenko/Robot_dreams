@@ -16,7 +16,7 @@ function getAllPublic() {
                 <p class="list-text email">email: ${element.email}</p>
                 <p class="list-text gender">gender: ${element.gender}</p>
                 <p class="list-text status">status: ${element.status}</p>
-                <a href="index1.html" class="btn btn-primary" onclick="getContent('${element.id}')">Open all posts of this User</a>
+                <a href="index1.html" class="btn btn-primary" onclick="getContent('${element.id}')">Open all posts of the User</a>
             </div>
             `;
         });
