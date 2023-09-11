@@ -13,7 +13,7 @@ function getContentPost() {
         if (data.length === 0){
             postsHTML.innerHTML += `
             <div class="alert alert-warning" role="alert">
-            Sorry, User doesn't have any posts yet!
+            Sorry, User doesn't have any posts!
             </div>
             `;
         } else {
