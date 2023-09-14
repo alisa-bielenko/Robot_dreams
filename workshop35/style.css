@@ -1,0 +1,38 @@
+.card-body.public {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(65, 27, 218, 0.2);
+}
+
+.card-title.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text.email,
+.card-text.gender,
+.card-text.status {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(55, 21, 206, 0.2);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 5px;
+}
