@@ -1,0 +1,16 @@
+.products {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 25px;
+  padding: 20px;
+  color: #6f1d1b;
+  background-color: bisque;
+}
+
+div.product {
+  background-color: antiquewhite;
+}
+.product img {
+  box-shadow: 5px 5px 10px;
+  object-fit: cover;
+}
