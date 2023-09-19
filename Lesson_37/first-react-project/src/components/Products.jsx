@@ -4,7 +4,7 @@ import Product from './Product';
 
 function Products() {
   const products = [
-//add this to useState
+
     { id: 1,
       name: 'Massage',
       price: 100,
