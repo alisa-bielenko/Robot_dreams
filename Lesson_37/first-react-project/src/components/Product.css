@@ -1,0 +1,27 @@
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product h3 {
+  font-size: 1.2rem;
+}
+
+.product p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.product img {
+  width: 200px;
+  height: 140px;
+}
