@@ -1,0 +1,27 @@
+.header {
+  background: burlywood;
+  color: #6f1d1b;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.cap h2{
+  padding-top: 40px;
+}
+
+.cap p {
+  padding-top: 10px;
+}
+
+.cap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-size {
+  height: 120px;
+}
+
+.cart {
+  margin-top: 20px;
+}
