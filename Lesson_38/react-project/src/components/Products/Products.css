@@ -1,0 +1,46 @@
+.products {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  gap: 25px;
+  margin-left: 130px;
+  padding: 10px;
+  color: #6f1d1b;
+  background-color: bisque;
+  height: 350px;
+}
+
+.item{
+  width: 350px;
+}
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item h3 {
+  font-size: 2rem;
+}
+
+.item p {
+  margin-bottom: auto;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.item img {
+  width: 200px;
+  height: 140px;
+}
+
+.item {
+  background-color: antiquewhite;
+}
+
+.item img {
+  box-shadow: 10px 5px 10px;
+  object-fit: cover;
+}
+
+.button-add {
+  padding-top: 20px;
+}
+
