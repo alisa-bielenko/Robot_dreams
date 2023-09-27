@@ -1,0 +1,12 @@
+.products {
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  background-color: bisque;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}

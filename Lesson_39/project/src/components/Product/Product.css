@@ -1,0 +1,25 @@
+.item {
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  width: 25%;
+  min-height: 150px;
+  border: 2px solid hsl(35, 90%, 20%);
+  border-radius: 5px;
+  color: #6f1d1b;
+}
+
+.item img {
+  width: 160px;
+  height: 120px;
+  margin-bottom: 8px;
+}
+
+.item .button-color {
+  background: burlywood;
+  border: 2px solid #6f1d1b;
+}
+
+.item-title {
+  font-weight: bold;
+}
