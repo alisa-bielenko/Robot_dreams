@@ -28,7 +28,7 @@
 
 .header-menu {
   display: flex;
-  gap: 400px;
+  gap: 40px;
   background-color: bisque;
   padding-left: 55px;
   padding-top: 10px;
@@ -50,6 +50,11 @@
   border: 3px solid #6f1d1b;
   padding: 5px;
   border-radius: 5px;
+  color: #6f1d1b;
+}
+
+.menu-page a {
+  color: #6f1d1b;
 }
 
 .img-size {
