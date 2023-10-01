@@ -26,7 +26,7 @@ export default function CreateProduct (props) {
                   id='title' 
                   className='form-control'
                   placeholder='Name of product'
-                  {... register( "title", {required: 'Product name not entered'} )} 
+                  {... register( 'title', {required: 'Product name not entered'} )} 
                 />
                 {errors.title && (<div className='errors'>{errors.title.message}</div>)} 
             </div>
@@ -40,7 +40,7 @@ export default function CreateProduct (props) {
                   id='price' 
                   className='form-control' 
                   placeholder='Price of product'
-                  { ... register( "price", {required: 'Enter price of this product'} ) } 
+                  { ... register( 'price', {required: 'Enter price of this product'} ) } 
                 /> 
                 {errors.price && (<div className='errors'>{errors.price.message}</div>)} 
             </div>
