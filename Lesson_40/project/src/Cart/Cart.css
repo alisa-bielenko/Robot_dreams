@@ -1,0 +1,16 @@
+.cart {
+  max-width: 80px;
+  position: relative;
+}
+
+.counter {
+  background-color: red;
+  display: block;
+  color: white;
+  width: 30px;
+  border-radius: 30px;
+  position: absolute;
+  left: 60px;
+  top: 8px;
+  text-align: center;
+}
