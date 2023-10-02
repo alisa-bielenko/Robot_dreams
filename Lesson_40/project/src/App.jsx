@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import CreateProduct from './CreateProduct/CreateProduct';
 import Products from './Products/Products';
 import './App.css';
+import NotFound from './NotFound';
 
 export const NotificationContext = createContext();
 
@@ -38,6 +39,7 @@ const App = () => {
       <Routes>
         <Route path='/products' element={<Products addProductToCart={addProductToCart}></Products>}></Route>
         <Route path='/createProduct' element={<CreateProduct addNewProduct={addNewProduct}></CreateProduct>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </NotificationContext.Provider>
     </>

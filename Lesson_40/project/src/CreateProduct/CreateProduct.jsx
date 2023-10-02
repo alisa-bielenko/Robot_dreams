@@ -47,7 +47,7 @@ export default function CreateProduct (props) {
             <div className='mb-3'>
                 <input 
                   type='file' 
-                  className='form-control' { ... register ( "thumbnail" ) } 
+                  className='form-control' { ... register ( 'thumbnail' ) } 
                 /> 
             </div>
             <input type='submit' value="Send"/>
