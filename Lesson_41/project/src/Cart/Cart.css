@@ -1,0 +1,19 @@
+.basket {
+  max-width: 100px;
+}
+
+.cart {
+  position: relative;
+}
+
+.counter {
+  background-color: red;
+  display: block;
+  color: white;
+  width: 24px;
+  border-radius: 20px;
+  position: absolute;
+  left: 80px;
+  top: 0px;
+  text-align: center;
+}  

@@ -1,0 +1,14 @@
+.products {
+  padding: 30px;
+  padding-top: 190px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  background-color: bisque;
+}
+
+.item:hover {
+  background-color: burlywood;
+  transform: scale(1.05);
+}
