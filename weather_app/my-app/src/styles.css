@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lexend, sans-serif;
+  font-weight: 700;
+}
+:root {
+  --semi-transparent: rgba(255, 255, 255, 0.493);
+  --shadow-color: 0px 2px 15px #000000d5;
+  --transparent-white: #ffffff9a;
+  --transparent-bg: #64646441;
+  --almost-white: #ffffffe7;
+}
+#container-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+.bg-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.logo {
+  margin: 20px;
+  margin-top: 0;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+}
+.logo-image {
+  width: 80px;
+  margin: 5px;
+  z-index: 10;
+  opacity: 0.9;
+}
+.logo-text {
+  font-family: 'Fredoka One', cursive;
+  z-index: 10;
+  color: var(--almost-white);
+  font-size: 2.5rem;
+  text-shadow: var(--shadow-color);
+}
+.search-container {
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid var(--semi-transparent);
+  margin: 50px 20px;
+}
+.loc-input {
+  max-width: 250px;
+  padding: 2px 15px;
+  margin-bottom: -5px;
+  font-size: 1.3rem;
+  background-color: transparent;
+  color: var(--transparent-white);
+  border: none;
+  letter-spacing: 3px;
+  caret-color: var(--semi-transparent);
+}
+.loc-input:focus {
+  outline: none;
+}
+.search-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.search {
+  padding: 5px;
+}
+.location-container {
+  z-index: 3;
+  margin: 30px;
+  color: var(--transparent-white);
+}
+.location-container .location {
+  font-size: 3.5rem;
+  text-shadow: var(--shadow-color);
+  margin: 10px;
+}
+.location-container .date {
+  font-size: 2.2rem;
+  margin: 10px;
+  font-weight: 500;
+  text-shadow: var(--shadow-color);
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  z-index: 10;
+  padding: 20px 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 40px;
+  color: var(--transparent-white);
+  width: 400px;
+  height: 250px;
+  background-color: var(--transparent-bg);
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 4px #00000044;
+}
+.text {
+  text-align: left;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+.text-special {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+.text-special span {
+  font-size: 3rem;
+}
+.weather-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 5px 10px;
+  width: 90px;
+  height: 90px;
+  opacity: 0.75;
+}
+#arrow {
+  display: none;
+  opacity: 0;
+}
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  width: 100%;
+  max-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--almost-white);
+  background-color: #00000044;
+  box-shadow: var(--shadow-color);
+}
+footer p {
+  margin: 10px;
+}
+.socialmedia img {
+  margin: 0 15px;
+  transition: transform 0.3s;
+}
+.socialmedia img:hover {
+  transform: scaleX(0.92);
+}
+footer p a {
+  color: var(--almost-white);
+}
+
+@media screen and (max-width: 720px) {
+  @keyframes pulse {
+    0% {
+      bottom: 20px;
+    }
+    20% {
+      bottom: 10px;
+    }
+    30% {
+      bottom: 25px;
+    }
+    40% {
+      bottom: 10px;
+    }
+    60% {
+      bottom: 20px;
+    }
+    80% {
+      bottom: 10px;
+    }
+    100% {
+      bottom: 20px;
+    }
+  }
+  :root {
+    font-size: 10px;
+  }
+  .logo {
+    height: 120px;
+  }
+  .logo-image {
+    width: 50px;
+  }
+  .loc-input {
+    font-size: 1.5rem;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: 280px;
+    height: 200px;
+  }
+  .text {
+    font-size: 1.8rem;
+  }
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+  #arrow {
+    position: fixed;
+    display: block;
+    opacity: 1;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.7s;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .socialmedia img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+}
