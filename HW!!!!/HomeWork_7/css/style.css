@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;600;700;800&display=swap');
+
+@import 'components/header.css';
+@import 'components/main-news.css';
+@import 'components/more-topics.css';
+@import 'components/footer.css';
+
+* {
+    font-family: 'Urbanist', sans-serif;
+    color: #1A1B1B;
+}
+
+.container {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 744px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1368px) {
+    .container {
+        width: 1296px;
+    }
+} 
