@@ -1,3 +1,4 @@
+import React from 'react';
 import Header from './Header/Header';
 import CreateProduct from './CreateProduct/CreateProduct';
 import Products from './Products/Products';
