@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 });
 
+
 changeThemeButton.addEventListener('click', (event) => {
 
 	if (event.target.dataset.theme === 'light') {

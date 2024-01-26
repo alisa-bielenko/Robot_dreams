@@ -83,6 +83,7 @@ changeThemeButton.addEventListener('click', () => {
 });
 
 const loadChangedTheme = () => {
+    
     if (localStorage.getItem('theme') === 'true') {
         document.body.classList.add('new-theme');
     }
