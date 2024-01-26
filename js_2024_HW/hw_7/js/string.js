@@ -103,13 +103,11 @@ console.log(checkLengthOfString('checked string', 10));
 console.log('_________________task#3_________________')
 
 function calculateAge(birthDate) {
-    
-    console.log(birthDate);
+    //console.log(birthDate);
  
     const birthDateObj = new Date(birthDate);
 
     let currentDate = new Date();
-
     let yourAge = Math.floor((currentDate - birthDateObj) / (365.25 * 24 * 60 * 60 * 1000));
   
     return yourAge;
@@ -117,6 +115,5 @@ function calculateAge(birthDate) {
   
 let userBirthDate = prompt("Enter your birthday as YYYY-MM-DD:"); 
 let userAge = calculateAge(userBirthDate);
-
 
 console.log(`You are ${userAge} years old.`);
