@@ -1,0 +1,48 @@
+:root {
+	--bg-color: rgb(36, 50, 65);
+	--text-color: #F6FDFF;
+	--bg-color-price-plan: #eeecdf;
+    --black-color: #0E0F13;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.header-title {
+    color: var(--text-color);
+}
+
+.header-menu-list-link {
+    color: var(--text-color);
+}
+
+.main-title {
+    color: var(--text-color);
+}
+
+.btn.sing_in-btn {
+    background-color: var(--bg-color-price-plan);
+}
+
+.price-plan {
+	background: var(--bg-color-price-plan);
+}
+
+.price-title {
+	color: var(--black-color);
+}
+
+.price-value {
+	color: var(--black-color);
+}
+
+.important {
+	border: 1px solid #161A34;
+	background: #161A34;
+	color: #F6FDFF;
+}
+
+.important span {
+	color: #F6FDFF;
+}

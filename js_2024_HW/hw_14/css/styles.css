@@ -1,0 +1,245 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: var(--white);
+}
+
+:root {
+	--bg-color: #fff;
+	--text-color: #0E0F13;
+	--bg-color-price-plan: #FDFDFD;
+}
+
+
+/* Header style */
+header {
+    margin: 40px 52px 0 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-title {
+    color: #0E0F13;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.header-menu-list-link {
+    color: #0E0F13;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.header-menu-list-link.active {
+    color: #425DF8;
+    cursor: default;
+}
+
+.btn {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 18px 22px;
+}
+
+.btn.sing_in-btn {
+    color: #0E0F13;
+    border: 1px solid #DADADA;
+    background-color: #fff;
+    margin-right: 24px;
+}
+
+.sing_up-btn {
+    color: #F6FDFF;
+    border: 1px solid #425DF8;
+    background: #425DF8;
+}
+
+
+/* Main style */
+.container {
+    
+    margin: 0 52px 0 52px;
+}
+
+.main-title {
+    margin-top: 157px;
+    text-align: center;
+    color: #0E0F13;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.main-subtitle {
+    margin-top: 24px;
+    color: #7F828A;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin-top: 120px;
+}
+
+.price-plan {
+    display: flex;
+    padding: 56px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid #DADADA;
+    background: #FDFDFD;
+    width: fit-content;
+}
+
+.price-title {
+    color: #0E0F15;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+.price-subtitle {
+    color: #7F828A;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 27px;
+    text-align: center;
+    width: 304px;
+}
+
+.price-value {
+    color: #0E0F15;
+    text-align: right;
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: -2.56px;
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.price-value span {
+    color: #7F828A;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+
+.price-plan-list {
+    margin-top: 27px;
+}
+
+.price-plan-list-item {
+    position: relative;
+    color: #7F828A;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 16px;
+    line-height: 27.5px; 
+}
+
+.price-plan-list-item:nth-child(1) {
+    padding-top: 0;
+}
+
+.price-plan-list-item::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons/bullit.png);
+    left: -36px;
+}
+
+.price-link {
+    border-radius: 8px;
+    border: 1px solid #425DF8;
+    background: #425DF8;
+    color: #F6FDFF;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 125px;
+    width: 162px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.important {
+    border: 1px solid #161A34;
+    background: #161A34;
+    color: #F6FDFF;
+}
+
+.important span {
+    color: #F6FDFF;
+}
+
+/* footer style */
+
+.divider {
+    margin-top: 196px;
+    background: #0E0F13;
+    height: 1px;
+    padding: 0;
+}
+
+.footer-container {
+    margin: 16px 52px 16px 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-title {
+    color: #7F828A;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.right {
+    color: #7F828A;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
