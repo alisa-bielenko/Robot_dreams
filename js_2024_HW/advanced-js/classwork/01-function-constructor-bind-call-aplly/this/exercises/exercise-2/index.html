@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport'
+				content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<title>Document</title>
+	<style>
+      table {
+          border-collapse: collapse;
+          font-family: sans-serif;
+      }
+      td, th {
+          box-sizing: border-box;
+          padding: 24px;
+          border: 1px solid black;
+      }
+
+      th {
+          font-family: sans-serif;
+          font-size: 28px;
+          background: grey;
+          color: white;
+      }
+      td{
+          font-size: 24px;
+          line-height: 36px;
+          font-weight: 700;
+      }
+	</style>
+	<script defer src='index.js'></script>
+	<link rel='stylesheet' href='preloader.css'>
+</head>
+<body>
+
+<table>
+	<tr>
+		<th>Grade</th>
+		<th>Value</th>
+	</tr>
+
+	<tr>
+		<td>Average</td>
+		<td id='average'>
+			<div class="preloader">
+				<span class="preloader_item--1"></span>
+				<span class="preloader_item--2"></span>
+				<span class="preloader_item--3"></span>
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Min</td>
+		<td id='min'>
+			<div class="preloader">
+				<span class="preloader_item--1"></span>
+				<span class="preloader_item--2"></span>
+				<span class="preloader_item--3"></span>
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td>Max</td>
+		<td id='max'>
+			<div class="preloader">
+				<span class="preloader_item--1"></span>
+				<span class="preloader_item--2"></span>
+				<span class="preloader_item--3"></span>
+			</div>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

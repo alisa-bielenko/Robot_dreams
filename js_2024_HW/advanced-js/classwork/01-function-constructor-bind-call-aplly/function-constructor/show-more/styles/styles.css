@@ -1,0 +1,33 @@
+.show-more__text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.show-more__wrapper {
+    box-sizing: border-box;
+    padding: 24px 16px;
+    margin: 20px 0;
+}
+
+.show-more__button {
+    background: unset;
+    border: unset;
+    outline: none;
+    margin-top: 20px;
+    float: right;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: blue;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.show-more__button:hover {
+    color: darkblue;
+}
+
+.container {
+    font-family: sans-serif;
+}

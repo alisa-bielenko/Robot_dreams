@@ -1,0 +1,41 @@
+@keyframes preloaderUpDown {
+    from {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.preloader_item--3, .preloader_item--2, .preloader_item--1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.25);
+    margin: 0 5px;
+    animation: preloaderUpDown 0.6s ease infinite;
+    background: grey;
+}
+
+.preloader_item--1 {
+    animation-delay: 0.1s;
+}
+
+.preloader_item--2 {
+    animation-delay: 0.2s;
+}
+
+.preloader_item--3 {
+    animation-delay: 0.3s;
+}
