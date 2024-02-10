@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 0 26px;
+    @media (min-width: $bp-md) {
+        padding: 0 80px;
+    }
+
+    @media (min-width: $bp-lg) {
+        div{
+            max-width: 1170px; 
+            margin:0 auto;
+        }
+    }
+}

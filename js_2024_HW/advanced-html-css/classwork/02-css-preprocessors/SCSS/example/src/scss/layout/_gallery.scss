@@ -1,0 +1,33 @@
+@import "../absracts/variables";
+
+.gallery {
+    width: 100%;
+    background: lightblue;
+    padding: 24px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media (min-width: $bp-md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $bp-lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+
+    &__item {
+        border: 1px solid black;
+
+        @media (min-width: $bp-md) {
+            font-size: 24px;
+        }
+    
+        @media (min-width: $bp-lg) {
+            font-size: 36px;
+        }
+    }
+}
