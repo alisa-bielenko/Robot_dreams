@@ -1,0 +1,28 @@
+@import "../shared/variables";
+@import "../shared/animations";
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+%preloader_item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(255, 255, 255, .25);
+  margin: 0 5px;
+  animation: preloaderUpDown .6s ease infinite;
+}
+
+@for $i from 1 through 5 {
+  .preloader_item--#{$i} {
+    @extend %preloader_item;
+    background: nth($preloader-colors-list, $i);
+    animation-delay: .1s * $i;
+  }
+}

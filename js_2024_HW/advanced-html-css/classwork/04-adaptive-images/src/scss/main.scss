@@ -1,0 +1,48 @@
+// .banner {
+//     width: 100%;
+//     box-sizing: border-box;
+//     padding: 30px;
+//     // aspect-ratio: 1;
+//     // height: 500px;
+//     background-image: url("../img/mobile.jpg");
+//     background-color: lightgrey;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+
+//     @media (min-width: 768px) {
+//         background-image: url("../img/tablet.jpg");
+//         // aspect-ratio: 3 / 4;
+//     }
+
+//     @media (min-width: 1024px) {
+//         background-image: url("../img/desktop.jpg");
+//         // aspect-ratio: 700 / 519;
+//     }
+// }
+
+// .img {
+//     width: 20%;
+//     height: 100%;
+//     // height: 500px;
+//     object-fit: cover;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+
+// section {
+//     display: flex;
+//     height: fit-content;
+//     position: relative;
+//     box-sizing: border-box;
+//     padding-left: 20%;
+// }
+
+
+.img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+}

@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+
+.banner{
+    margin: 23px 0 28px;
+    display: block;
+
+    & img{
+        width: 100%;
+        padding: 0 25px;
+    }
+    
+    @media(min-width: $bp-md){
+        
+            margin: 28px 0 56px;
+        
+            & img{
+                padding: 0 80px;
+        }
+    }
+
+    @media(min-width: $bp-lg){   
+        margin: 34px auto 66px;
+        max-width: 1170px;
+        & img{
+            padding: 0;
+        }
+
+}
+}

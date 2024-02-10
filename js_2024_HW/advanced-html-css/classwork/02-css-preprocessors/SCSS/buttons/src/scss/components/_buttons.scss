@@ -1,0 +1,45 @@
+@import "./abstracts/_variables.scss";
+
+
+
+.button {
+    border-radius: 10px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 8px 35px;
+    background: $primary-color;
+    border: 0;
+
+    &:hover {
+        background: $primary-color-hover;
+    } 
+
+    &:disabled {
+        background: #C4C4C4;
+    }
+
+
+    &--secondary {
+        @extend .button;
+        background: $secondary-color;
+
+        &:hover {
+            background: $secondary-color-hover;
+        }
+    }
+
+
+    &--danger {
+        @extend .button;
+        background: $danger-color;
+
+        &:hover {
+            background: $danger-color-hover;
+        }
+    }
+}
+
+

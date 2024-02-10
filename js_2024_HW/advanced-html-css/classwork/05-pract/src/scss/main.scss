@@ -1,0 +1,7 @@
+// * Це головний sass/scss файл проекту
+// * імпортуйте сюди всі інші ваші файли sass/scss
+@import "./base/reset";
+@import "./base/defaults";
+@import "./base/typography";
+@import "./components/buttons";
+
