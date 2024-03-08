@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif
+}
+
+body {
+    background-color: #e5e9f1;
+}
+
+.header {
+    color: #e5e9f1;
+    background-color: #0b5582;
+    height: 100px;
+    padding-top: 35px;
+    position: relative;
+}
+
+.header__add-post-btn {
+    background-color: #1DA1F2;
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 47%;
+    left: 75%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.header__add-post-btn:hover {
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+    position: fixed;
+}
+
+.modal {
+    border-radius: 5px;
+    background-color: #1DA1F2;
+    color: #fff;
+    width: 500px;
+    height: 350px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal__inputs {
+    margin-top: 10px;
+}
+
+.modal__inputs label {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.modal__inputs input,
+.modal__inputs textarea {
+    margin-top: 10px;
+    display: block;
+}
+
+.modal__inputs input {
+    height: 30px;
+    width: 300px;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.modal__inputs input:focus {
+    outline: 1px solid rgb(191, 126, 103);
+    border: none;
+}
+
+.modal__inputs textarea {
+    height: 100px;
+    width: 300px;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    resize: none
+}
+
+.modal__submit-btn {
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: black 1px solid;
+    font-size: 18px;
+}
+
+.modal__submit-btn:hover {
+    cursor: pointer;
+}
+
+.modal__submit-btn:active {
+    transform: scale(.9);
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.modal__close-btn:active {
+    transform: scale(0.9);
+}
+
+.modal__close-btn:before,
+.modal__close-btn:after {
+    position: absolute;
+    content: ' ';
+    left: 11px;
+    display: block;
+    height: 25px;
+    width: 2px;
+    background-color: #000000;
+}
+
+.modal__close-btn:before {
+    transform: rotate(45deg);
+}
+
+.modal__close-btn:after {
+    transform: rotate(-45deg);
+}
+
+.cards {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.cards__card {
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px rgb(73, 72, 72);
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.user-info__fullname {
+    display: flex;
+    gap: 3px;
+}
+
+.user-content__heading,
+.user-content__text {
+    margin-top: 10px;
+}
+
+.user-content__heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.user-content__text {
+    font-size: 16px;
+}
+
+.user-info__btn-conteiner {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.user-info__delete-btn,
+.user-info__edit-btn {
+    width: 80px; 
+    height: 30px; 
+    font-size: 16px; 
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 7px solid #1DA1F2db;
+    border-radius: 50%;
+    animation: spin 6000ms linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+}
